@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:text="Select who you are ?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@string/common_google_play_services_enable_title"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/select"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userimgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/user" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/priestimgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/priest" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/stallimgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/shop" />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_margin="20dp"
+        android:id="@+id/txtlogin"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:id="@+id/loginform"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Mobile Number"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:inputType="phone"
+            android:hint=" Mobile Number"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:id="@+id/mid"
+            android:background="@drawable/backgroundbox"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnsend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mid"
+                android:background="@drawable/yellow_button"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Send Otp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_sending_otp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signup"
+            android:layout_gravity="right"
+            android:text="Don't Have an Account ? !  SignUp"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+</LinearLayout>

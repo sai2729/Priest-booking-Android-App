@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ShopSignup"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopkeeper SignUp"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#FF9800"
+                android:visibility="visible"/>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/shop"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey Shop Keeper, Provide your Details  !!"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:id="@+id/txtinfo"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your Name"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:inputType="text"
+                android:id="@+id/edtname"
+                android:hint=" Name"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_face"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/backgroundbox"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your Mobile Number"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="46dp"
+                android:inputType="phone"
+                android:hint=" Mobile Number"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:id="@+id/edtmobile"
+                android:paddingStart="10dp"
+                android:background="@drawable/backgroundbox"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Details"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="text"
+                android:hint=" Enter Shop Address"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_location"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/edtloc"
+                android:background="@drawable/backgroundbox"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Shop Timings"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/l1"
+            android:id="@+id/l2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Open time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Close time"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/l2"
+            android:id="@+id/l3"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00 AM"
+                android:textColor="#A39A9A"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ic_time_start"
+                android:background="@drawable/backgroundbox"
+                android:paddingRight="10dp"
+                android:id="@+id/btnstart"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00 PM"
+                android:textColor="#A39A9A"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_time_end"
+                android:background="@drawable/backgroundbox"
+                android:paddingRight="10dp"
+                android:id="@+id/btnend"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:id="@+id/l4"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_button"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="SignUp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txtpriestsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/l4"
+            android:onClick="go_to_login"
+            android:gravity="end"
+            android:visibility="visible"
+            android:textColor="#000"
+            android:text="Already Have an Account ? !  Login"
+            android:textSize="13dp"/>
+    </RelativeLayout>
+
+</ScrollView>

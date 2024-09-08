@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".SinglePreviousActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/txtservice"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orderid"
+        android:id="@+id/txtorderid"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="User Name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/txtname"
+        android:text="Loading .."
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_face"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/backgroundbox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Mobile Number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Loading ..."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:paddingStart="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingEnd="30dp"
+        android:id="@+id/txtmob"
+        android:background="@drawable/backgroundbox" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Location"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Loading ..."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_location"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtloc"
+        android:background="@drawable/backgroundbox" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Timings"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Loading ..."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_date"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtservtiming"
+        android:background="@drawable/backgroundbox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Price"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Loading ..."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_rupeeee"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtservprice"
+        android:background="@drawable/backgroundbox" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".AddAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Admin"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textColor="#FF9800"
+            android:visibility="visible"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/admin"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtaddmob"
+            android:hint="Enter Admin Mobile Number"
+            android:background="@drawable/backgroundbox"
+            android:layout_margin="10dp"
+            android:padding="13dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Admin Name"
+            android:id="@+id/edtaddname"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroundbox"
+            android:padding="13dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/btnadd"
+            android:background="@drawable/buttonstyle"
+            android:text="Add ADMIN"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

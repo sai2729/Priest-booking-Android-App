@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_profile_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin profile"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textColor="#FF9800"
+            android:visibility="visible"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/admin"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/txtname"
+            android:text="Admin"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_face"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/backgroundbox" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Mobile Number"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="30dp"
+            android:id="@+id/txtmob"
+            android:background="@drawable/backgroundbox" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/btnadd"
+            android:background="@drawable/buttonstyle"
+            android:text="Add ADMIN"
+            android:textColor="#fff"/>
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_button"
+                android:layout_margin="20dp"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Logout" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_logging_out"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

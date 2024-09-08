@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_service_details"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/serviceimg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Service"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:id="@+id/txtservice"
+                android:text="Pooja"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date and Timings"
+            android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/l2"
+                android:id="@+id/l3"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00-00-0000"
+                    android:textColor="#A39A9A"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:background="@drawable/backgroundbox"
+                    android:paddingRight="10dp"
+                    android:id="@+id/btndate"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00 PM"
+                    android:textColor="#A39A9A"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_time_end"
+                    android:background="@drawable/backgroundbox"
+                    android:paddingRight="10dp"
+                    android:id="@+id/btntime"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="text"
+            android:hint=" Enter Address"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_location"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:id="@+id/edtloc"
+            android:background="@drawable/backgroundbox" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:id="@+id/txtprice"
+                android:text="Loading .."/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:id="@+id/btnbook"
+            android:background="@drawable/yellow_button"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
