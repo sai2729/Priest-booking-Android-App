@@ -50,3 +50,21 @@ This app provides an easy-to-use interface for customers to book priests for rel
 - Android SDK 30 or higher
 - Java 8
 - Internet connection for real-time updates
+
+## Technologies Used
+
+- Android Studio
+- Java, XML
+- Firebase for real-time notifications and database management
+
+## Contributing
+
+- Fork the project.
+- Create a new branch (git checkout -b feature/your-feature).
+- Commit your changes (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature/your-feature).
+- Open a pull request.
+
+## License
+
+This project is licensed under the MIT License
